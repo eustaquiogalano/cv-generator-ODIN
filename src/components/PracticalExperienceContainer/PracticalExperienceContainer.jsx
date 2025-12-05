@@ -1,8 +1,8 @@
 import { FormField } from "../FormField/FormField";
 
-function PracticalExperienceContainer() {
+function PracticalExperienceContainer({ sectionName }) {
   return (
-    <section className="practical-experience">
+    <section className={sectionName}>
       <FormField
         label="Company Name: "
         type="text"

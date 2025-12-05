@@ -1,8 +1,8 @@
 import { FormField } from "../FormField/FormField";
 
-function EducationalBackgroundContainer() {
+function EducationalBackgroundContainer({ sectionName }) {
   return (
-    <section className="educational-background">
+    <section className={sectionName}>
       <FormField label="School: " type="text" name="school" id="school" />
       <FormField
         label="Date of Study: "

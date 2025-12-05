@@ -1,8 +1,8 @@
 import { FormField } from "../FormField/FormField";
 
-function GeneralInformationContainer() {
+function GeneralInformationContainer({ sectionName }) {
   return (
-    <section className="general-information">
+    <section className={sectionName}>
       <FormField label="Name: " type="text" name="name" id="name" />
       <FormField label="Email: " type="email" name="email" id="email" />
       <FormField
