@@ -5,10 +5,10 @@ import "./CVEditor.css";
 
 function CVEditor() {
   return (
-    <div>
-      <GeneralInformationContainer />
-      <EducationalBackgroundContainer />
-      <PracticalExperienceContainer />
+    <div className="cv-editor">
+      <GeneralInformationContainer sectionName="cv-editor__section" />
+      <EducationalBackgroundContainer sectionName="cv-editor__section" />
+      <PracticalExperienceContainer sectionName="cv-editor__section" />
     </div>
   );
 }
