@@ -1,4 +1,4 @@
-import CVEditor from "./components/CVEditor";
+import CVEditor from "./components/CVEditor/CVEditor";
 import "./styles/global.css";
 
 function App() {
