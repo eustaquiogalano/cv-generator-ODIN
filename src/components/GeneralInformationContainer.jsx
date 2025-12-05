@@ -7,7 +7,7 @@ function GeneralInformationContainer() {
       <FormField label="Email: " type="email" name="email" id="email" />
       <FormField
         label="Contact#: "
-        type="numer"
+        type="number"
         name="contact-number"
         id="contact-number"
       />
