@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./FormField.css";
 
 function FormField({ label = "", type, name, id, placeholder = "" }) {
   const [value, setValue] = useState("");
