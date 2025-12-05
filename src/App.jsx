@@ -1,5 +1,13 @@
+import { GeneralInformationContainer } from "./components/GeneralInformationContainer";
+
 function App() {
-  return <h1>React Template</h1>;
+  return (
+    <>
+      <main>
+        <GeneralInformationContainer />
+      </main>
+    </>
+  );
 }
 
 export default App;
