@@ -1,10 +1,10 @@
-import { GeneralInformationContainer } from "./components/GeneralInformationContainer";
+import CVEditor from "./components/CVEditor";
 
 function App() {
   return (
     <>
       <main>
-        <GeneralInformationContainer />
+        <CVEditor />
       </main>
     </>
   );
