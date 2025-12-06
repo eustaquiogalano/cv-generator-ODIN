@@ -1,10 +1,10 @@
 import CVDisplay from "./CVDisplay/CVDisplay";
 import CVEditor from "./CVEditor/CVEditor";
-import "./CVGenerator.css";
+import styles from "./CVGenerator.module.css";
 
 function CVGenerator() {
   return (
-    <div className="cv-generator">
+    <div className={styles["cv-generator"]}>
       <CVEditor />
       <CVDisplay />
     </div>

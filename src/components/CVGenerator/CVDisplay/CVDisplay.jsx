@@ -1,4 +1,4 @@
-import "./CVDisplay.css";
+import style from "./CVDisplay.module.css";
 
 function CVDisplay({
   name,
@@ -13,10 +13,10 @@ function CVDisplay({
   jobDate,
 }) {
   return (
-    <div className="cv-display">
-      <section className="cv-display__section">
+    <div className={style["cv-display"]}>
+      <section className={style["cv-display__section"]}>
         <h3>{name}</h3>
-        <div className="cv-display__div">
+        <div className={style["cv-display__div"]}>
           <p>
             email: <span>{email}</span>
           </p>
@@ -26,9 +26,9 @@ function CVDisplay({
         </div>
       </section>
       <hr />
-      <section className="cv-display__section">
+      <section className={style["cv-display__section"]}>
         <h4>Educational Background</h4>
-        <div className="cv-display__div">
+        <div className={style["cv-display__div"]}>
           <p>
             School: <span>{school}</span>
           </p>
@@ -41,9 +41,9 @@ function CVDisplay({
         </div>
       </section>
       <hr />
-      <section className="cv-display__section">
+      <section className={style["cv-display__section"]}>
         <h4>Practical Experience</h4>
-        <div className="cv-display__div">
+        <div className={style["cv-display__div"]}>
           <p>
             Company Name: <span>{companyName}</span>
           </p>

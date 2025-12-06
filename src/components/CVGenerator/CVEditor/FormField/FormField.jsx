@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./FormField.css";
+import style from "./FormField.module.css";
 
 function FormField({ label = "", type, name, id, placeholder = "" }) {
   const [value, setValue] = useState("");
@@ -9,8 +9,8 @@ function FormField({ label = "", type, name, id, placeholder = "" }) {
   }
 
   return (
-    <div className="form-field">
-      <label htmlFor={id} className="form-field__label">
+    <div className={style["form-field"]}>
+      <label htmlFor={id} className={style["form-field__label"]}>
         {label}{" "}
       </label>
       <input
@@ -19,7 +19,7 @@ function FormField({ label = "", type, name, id, placeholder = "" }) {
         name={name}
         id={id}
         placeholder={placeholder}
-        className="form-field__input"
+        className={style["form-field__input"]}
         onChange={handleChange}
       />
     </div>
