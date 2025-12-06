@@ -1,12 +1,12 @@
-import CVEditor from "./components/CVEditor/CVEditor";
 import "./styles/global.css";
 import "./styles/App.css";
+import CVGenerator from "./components/CVGenerator/CVGenerator";
 
 function App() {
   return (
     <>
       <main>
-        <CVEditor />
+        <CVGenerator />
       </main>
     </>
   );
