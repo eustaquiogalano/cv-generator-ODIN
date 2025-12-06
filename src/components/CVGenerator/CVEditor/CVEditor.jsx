@@ -1,6 +1,6 @@
-import { EducationalBackgroundContainer } from "../EducationalBackgroundContainer/EducationalBackgroundContainer";
-import { GeneralInformationContainer } from "../GeneralInformationContainer/GeneralInformationContainer";
-import { PracticalExperienceContainer } from "../PracticalExperienceContainer/PracticalExperienceContainer";
+import { EducationalBackgroundContainer } from "./EducationalBackgroundContainer/EducationalBackgroundContainer";
+import { GeneralInformationContainer } from "./GeneralInformationContainer/GeneralInformationContainer";
+import { PracticalExperienceContainer } from "./PracticalExperienceContainer/PracticalExperienceContainer";
 import "./CVEditor.css";
 
 function CVEditor() {
