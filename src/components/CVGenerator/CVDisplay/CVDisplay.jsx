@@ -11,6 +11,7 @@ function CVDisplay({
   positionTitle,
   responsibilities,
   jobDate,
+  clickHandler,
 }) {
   return (
     <div className={style["cv-display"]}>
@@ -58,6 +59,9 @@ function CVDisplay({
           </p>
         </div>
       </section>
+      <div>
+        <button onClick={clickHandler}>Edit</button>
+      </div>
     </div>
   );
 }
