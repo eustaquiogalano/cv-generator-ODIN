@@ -3,9 +3,13 @@ import { GeneralInformationContainer } from "./GeneralInformationContainer/Gener
 import { PracticalExperienceContainer } from "./PracticalExperienceContainer/PracticalExperienceContainer";
 import style from "./CVEditor.module.css";
 
-function CVEditor() {
+function CVEditor({ isVisible }) {
   return (
-    <div className={`${style["cv-editor"]} ${style["cv-editor--disabled"]}`}>
+    <div
+      className={`${style["cv-editor"]} ${
+        isVisible ? "" : style["cv-editor--disabled"]
+      }`}
+    >
       <GeneralInformationContainer sectionName={style["cv-editor__section"]} />
       <EducationalBackgroundContainer
         sectionName={style["cv-editor__section"]}
