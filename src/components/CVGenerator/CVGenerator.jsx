@@ -9,7 +9,11 @@ function CVGenerator() {
   console.log(isCVEditorVisible);
 
   function editCVVisibility() {
+    if (isCVEditorVisible) {
+      setIsCVEditorVisible(false);
+    } else {
     setIsCVEditorVisible(true);
+    }
   }
 
   return (
