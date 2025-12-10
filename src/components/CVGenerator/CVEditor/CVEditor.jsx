@@ -3,7 +3,7 @@ import { GeneralInformationContainer } from "./GeneralInformationContainer/Gener
 import { PracticalExperienceContainer } from "./PracticalExperienceContainer/PracticalExperienceContainer";
 import style from "./CVEditor.module.css";
 
-function CVEditor({ isVisible }) {
+function CVEditor({ isVisible, clickHandler }) {
   return (
     <div
       className={`${style["cv-editor"]} ${
@@ -15,6 +15,9 @@ function CVEditor({ isVisible }) {
         sectionName={style["cv-editor__section"]}
       />
       <PracticalExperienceContainer sectionName={style["cv-editor__section"]} />
+      <div>
+        <button onClick={clickHandler}>Apply and Exit</button>
+      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function CVGenerator() {
 
   return (
     <div className={styles["cv-generator"]}>
-      <CVEditor isVisible={isCVEditorVisible} />
+      <CVEditor isVisible={isCVEditorVisible} clickHandler={editCVVisibility} />
       <CVDisplay clickHandler={editCVVisibility} />
     </div>
   );
