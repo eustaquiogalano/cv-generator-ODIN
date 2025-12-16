@@ -1,67 +1,16 @@
 import style from "./CVDisplay.module.css";
+import DisplayEducationalBackground from "./DisplayEducationalBackground/DisplayEducationalBackground";
+import DisplayGeneralInformation from "./DisplayGeneralInformation/DisplayGeneralInformaton";
+import DisplayPracticalExperience from "./DisplayPracticalExperience/DisplayPracticalExperience";
 
-function CVDisplay({
-  name,
-  email,
-  contactNumber,
-  school,
-  dateOfStudy,
-  course,
-  companyName,
-  positionTitle,
-  responsibilities,
-  jobDate,
-  clickHandler,
-}) {
+function CVDisplay() {
   return (
     <div className={style["cv-display"]}>
-      <section className={style["cv-display__section"]}>
-        <h3>{name}</h3>
-        <div className={style["cv-display__div"]}>
-          <p>
-            email: <span>{email}</span>
-          </p>
-          <p>
-            Contact #: <span>{contactNumber}</span>
-          </p>
-        </div>
-      </section>
+      <DisplayGeneralInformation />
       <hr />
-      <section className={style["cv-display__section"]}>
-        <h4>Educational Background</h4>
-        <div className={style["cv-display__div"]}>
-          <p>
-            School: <span>{school}</span>
-          </p>
-          <p>
-            Date of Study: <span>{dateOfStudy}</span>
-          </p>
-          <p>
-            Course: <span>{course}</span>
-          </p>
-        </div>
-      </section>
+      <DisplayEducationalBackground />
       <hr />
-      <section className={style["cv-display__section"]}>
-        <h4>Practical Experience</h4>
-        <div className={style["cv-display__div"]}>
-          <p>
-            Company Name: <span>{companyName}</span>
-          </p>
-          <p>
-            Position Title: <span>{positionTitle}</span>
-          </p>
-          <p>
-            Responsibilities: <span>{responsibilities}</span>
-          </p>
-          <p>
-            Job Date: <span>{jobDate}</span>
-          </p>
-        </div>
-      </section>
-      <div>
-        <button onClick={clickHandler}>Edit</button>
-      </div>
+      <DisplayPracticalExperience />
     </div>
   );
 }
